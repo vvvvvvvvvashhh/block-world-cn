@@ -1,0 +1,16 @@
+/runtime/
+/downloads/
+/backups/
+/evidence/
+/dist/
+/unpack/
+*.log
+*.sqlite
+*.sqlite-*
+*.db
+.env
+.env.*
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

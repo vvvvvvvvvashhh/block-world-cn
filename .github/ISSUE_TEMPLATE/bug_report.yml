@@ -1,0 +1,31 @@
+name: Bug / 错误报告
+description: 报告可复现的运行、存档或玩法问题
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "请先搜索已有问题。日志和截图请删除本机路径、账号、令牌及私人存档内容。"
+  - type: textarea
+    id: environment
+    attributes:
+      label: 环境与版本
+      description: 发行版本、Windows 版本、显卡/驱动、画质、额外模组
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 复现步骤
+      description: 种子、模式、具体操作；不要上传整个私人世界
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: 预期与实际结果
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 脱敏日志或截图

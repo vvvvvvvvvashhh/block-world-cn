@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 安全问题
+    url: https://github.com/vvvvvvvvvashhh/block-world-cn/blob/main/SECURITY.md
+    about: 请先查看私密报告说明，勿公开漏洞利用细节或私人数据。

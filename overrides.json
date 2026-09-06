@@ -1,0 +1,62 @@
+[
+  {
+    "source": "src/inventory.lua",
+    "target": "games/mineclonia/mods/HUD/mcl_inventory/survival.lua"
+  },
+  {
+    "source": "src/inventory.zh_CN.po",
+    "target": "games/mineclonia/mods/HUD/mcl_inventory/locale/mcl_inventory.zh_CN.po"
+  },
+  {
+    "source": "src/crafting_table.lua",
+    "target": "games/mineclonia/mods/ITEMS/mcl_crafting_table/init.lua"
+  },
+  {
+    "source": "src/crafting_table.zh_CN.po",
+    "target": "games/mineclonia/mods/ITEMS/mcl_crafting_table/locale/mcl_crafting_table.zh_CN.po"
+  },
+  {
+    "source": "src/furnaces.zh_CN.po",
+    "target": "games/mineclonia/mods/ITEMS/mcl_furnaces/locale/mcl_furnaces.zh_CN.po"
+  },
+  {
+    "source": "src/redstone.lua",
+    "target": "games/mineclonia/mods/ITEMS/REDSTONE/mcl_redstone/logic.lua"
+  },
+  {
+    "source": "src/local_experience.lua",
+    "target": "games/mineclonia/mods/LOCAL/local_experience/init.lua"
+  },
+  {
+    "source": "src/mod.conf",
+    "target": "games/mineclonia/mods/LOCAL/local_experience/mod.conf"
+  },
+  {
+    "source": "src/modpack.conf",
+    "target": "games/mineclonia/mods/LOCAL/modpack.conf"
+  },
+  {
+    "source": "assets/LICENSE.txt",
+    "target": "textures/local_classic_ui/LICENSE.txt"
+  },
+  {
+    "source": "assets/mcl_experience_bar.png",
+    "target": "textures/local_classic_ui/mcl_experience_bar.png"
+  },
+  {
+    "source": "assets/mcl_experience_bar_background.png",
+    "target": "textures/local_classic_ui/mcl_experience_bar_background.png"
+  },
+  {
+    "source": "assets/mcl_inventory_hotbar.png",
+    "target": "textures/local_classic_ui/mcl_inventory_hotbar.png"
+  },
+  {
+    "source": "assets/mcl_inventory_hotbar_selected.png",
+    "target": "textures/local_classic_ui/mcl_inventory_hotbar_selected.png"
+  },
+  {
+    "source": "assets/texture_pack.conf",
+    "target": "textures/local_classic_ui/texture_pack.conf"
+  }
+]

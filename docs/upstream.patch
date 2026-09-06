@@ -1,0 +1,924 @@
+--- a/mods/HUD/mcl_inventory/locale/mcl_inventory.zh_CN.po
++++ b/mods/HUD/mcl_inventory/locale/mcl_inventory.zh_CN.po
+@@ -1,127 +1,127 @@
+-msgid ""
+-msgstr ""
+-"Project-Id-Version: Luanti textdomain mcl_inventory x.x.x\n"
+-"Report-Msgid-Bugs-To: no@example.com\n"
+-"POT-Creation-Date: 2026-07-01 06:50+0200\n"
+-"PO-Revision-Date: 2026-06-12 05:08+0000\n"
+-"Last-Translator: chenhe <chenhe@noreply.codeberg.org>\n"
+-"Language-Team: Chinese (Simplified Han script) <https://"
+-"translate.codeberg.org/projects/mineclonia/mcl_inventory/zh_Hans/>\n"
+-"Language: zh_CN\n"
+-"MIME-Version: 1.0\n"
+-"Content-Type: text/plain; charset=UTF-8\n"
+-"Content-Transfer-Encoding: 8bit\n"
+-"Plural-Forms: nplurals=1; plural=0;\n"
+-"X-Generator: Weblate 2026.6.1\n"
+-
+-#: mods/HUD/mcl_inventory/creative.lua:13
+-msgid "Scrollbar"
+-msgstr "滚动条"
+-
+-#: mods/HUD/mcl_inventory/creative.lua:14
+-msgid "Pagination buttons"
+-msgstr "分页按钮"
+-
+-#: mods/HUD/mcl_inventory/creative.lua:17
+-msgid "Creative inventory scrolling"
+-msgstr "创造模式物品栏滚动"
+-
+-#: mods/HUD/mcl_inventory/creative.lua:328
+-msgid "Building Blocks"
+-msgstr "建筑方块"
+-
+-#: mods/HUD/mcl_inventory/creative.lua:329
+-msgid "Decoration Blocks"
+-msgstr "装饰方块"
+-
+-#: mods/HUD/mcl_inventory/creative.lua:330
+-msgid "Redstone"
+-msgstr "红石"
+-
+-#: mods/HUD/mcl_inventory/creative.lua:331
+-msgid "Transportation"
+-msgstr "交通"
+-
+-#: mods/HUD/mcl_inventory/creative.lua:332
+-msgid "Miscellaneous"
+-msgstr "杂项"
+-
+-#: mods/HUD/mcl_inventory/creative.lua:333
+-msgid "Search Items"
+-msgstr "搜索物品"
+-
+-#: mods/HUD/mcl_inventory/creative.lua:334
+-msgid "Foodstuffs"
+-msgstr "食物"
+-
+-#: mods/HUD/mcl_inventory/creative.lua:335
+-msgid "Tools"
+-msgstr "工具"
+-
+-#: mods/HUD/mcl_inventory/creative.lua:336
+-msgid "Combat"
+-msgstr "战斗"
+-
+-#: mods/HUD/mcl_inventory/creative.lua:337
+-msgid "Mobs"
+-msgstr "生物"
+-
+-#: mods/HUD/mcl_inventory/creative.lua:338
+-msgid "Brewing"
+-msgstr "酿造"
+-
+-#: mods/HUD/mcl_inventory/creative.lua:339
+-msgid "Materials"
+-msgstr "材料"
+-
+-#: mods/HUD/mcl_inventory/creative.lua:340
+-msgid "Survival Inventory"
+-msgstr "生存模式物品栏"
+-
+-#: mods/HUD/mcl_inventory/creative.lua:341
+-msgid "Not in Creative Inventory"
+-msgstr "不在创造模式物品栏中"
+-
+-#: mods/HUD/mcl_inventory/creative.lua:487
+-#: mods/HUD/mcl_inventory/survival.lua:139
+-msgid "Recipe book"
+-msgstr "配方书"
+-
+-#: mods/HUD/mcl_inventory/creative.lua:491
+-#: mods/HUD/mcl_inventory/survival.lua:143
+-msgid "Help"
+-msgstr "帮助"
+-
+-#: mods/HUD/mcl_inventory/creative.lua:496
+-#: mods/HUD/mcl_inventory/survival.lua:151
+-msgid "Advancements"
+-msgstr "进度"
+-
+-#: mods/HUD/mcl_inventory/creative.lua:501
+-msgid "Switch stack size"
+-msgstr "切换堆叠数量"
+-
+-#: mods/HUD/mcl_inventory/creative.lua:505
+-#: mods/HUD/mcl_inventory/survival.lua:147
+-msgid "Player settings"
+-msgstr "玩家设置"
+-
+-#: mods/HUD/mcl_inventory/creative.lua:533
+-msgid "@1 / @2"
+-msgstr "@1 / @2"
+-
+-#: mods/HUD/mcl_inventory/init.lua:192
+-msgid "Return to player inventory"
+-msgstr "返回玩家背包"
+-
+-#: mods/HUD/mcl_inventory/init.lua:239
+-msgid "Crafting table out of range!"
+-msgstr "离工作台太远！"
+-
+-#: mods/HUD/mcl_inventory/survival.lua:123
+-msgid "Crafting"
+-msgstr "制作"
+-
+-#: mods/HUD/mcl_inventory/survival.lua:135
+-msgid "Fill Craft Grid"
+-msgstr "填充合成网格"
++msgid ""
++msgstr ""
++"Project-Id-Version: Luanti textdomain mcl_inventory x.x.x\n"
++"Report-Msgid-Bugs-To: no@example.com\n"
++"POT-Creation-Date: 2026-07-01 06:50+0200\n"
++"PO-Revision-Date: 2026-06-12 05:08+0000\n"
++"Last-Translator: chenhe <chenhe@noreply.codeberg.org>\n"
++"Language-Team: Chinese (Simplified Han script) <https://"
++"translate.codeberg.org/projects/mineclonia/mcl_inventory/zh_Hans/>\n"
++"Language: zh_CN\n"
++"MIME-Version: 1.0\n"
++"Content-Type: text/plain; charset=UTF-8\n"
++"Content-Transfer-Encoding: 8bit\n"
++"Plural-Forms: nplurals=1; plural=0;\n"
++"X-Generator: Weblate 2026.6.1\n"
++
++#: mods/HUD/mcl_inventory/creative.lua:13
++msgid "Scrollbar"
++msgstr "滚动条"
++
++#: mods/HUD/mcl_inventory/creative.lua:14
++msgid "Pagination buttons"
++msgstr "分页按钮"
++
++#: mods/HUD/mcl_inventory/creative.lua:17
++msgid "Creative inventory scrolling"
++msgstr "创造模式物品栏滚动"
++
++#: mods/HUD/mcl_inventory/creative.lua:328
++msgid "Building Blocks"
++msgstr "建筑方块"
++
++#: mods/HUD/mcl_inventory/creative.lua:329
++msgid "Decoration Blocks"
++msgstr "装饰方块"
++
++#: mods/HUD/mcl_inventory/creative.lua:330
++msgid "Redstone"
++msgstr "红石"
++
++#: mods/HUD/mcl_inventory/creative.lua:331
++msgid "Transportation"
++msgstr "交通"
++
++#: mods/HUD/mcl_inventory/creative.lua:332
++msgid "Miscellaneous"
++msgstr "杂项"
++
++#: mods/HUD/mcl_inventory/creative.lua:333
++msgid "Search Items"
++msgstr "搜索物品"
++
++#: mods/HUD/mcl_inventory/creative.lua:334
++msgid "Foodstuffs"
++msgstr "食物"
++
++#: mods/HUD/mcl_inventory/creative.lua:335
++msgid "Tools"
++msgstr "工具"
++
++#: mods/HUD/mcl_inventory/creative.lua:336
++msgid "Combat"
++msgstr "战斗"
++
++#: mods/HUD/mcl_inventory/creative.lua:337
++msgid "Mobs"
++msgstr "生物"
++
++#: mods/HUD/mcl_inventory/creative.lua:338
++msgid "Brewing"
++msgstr "酿造"
++
++#: mods/HUD/mcl_inventory/creative.lua:339
++msgid "Materials"
++msgstr "材料"
++
++#: mods/HUD/mcl_inventory/creative.lua:340
++msgid "Survival Inventory"
++msgstr "生存模式物品栏"
++
++#: mods/HUD/mcl_inventory/creative.lua:341
++msgid "Not in Creative Inventory"
++msgstr "不在创造模式物品栏中"
++
++#: mods/HUD/mcl_inventory/creative.lua:487
++#: mods/HUD/mcl_inventory/survival.lua:139
++msgid "Recipe book"
++msgstr "配方书"
++
++#: mods/HUD/mcl_inventory/creative.lua:491
++#: mods/HUD/mcl_inventory/survival.lua:143
++msgid "Help"
++msgstr "帮助"
++
++#: mods/HUD/mcl_inventory/creative.lua:496
++#: mods/HUD/mcl_inventory/survival.lua:151
++msgid "Advancements"
++msgstr "进度"
++
++#: mods/HUD/mcl_inventory/creative.lua:501
++msgid "Switch stack size"
++msgstr "切换堆叠数量"
++
++#: mods/HUD/mcl_inventory/creative.lua:505
++#: mods/HUD/mcl_inventory/survival.lua:147
++msgid "Player settings"
++msgstr "玩家设置"
++
++#: mods/HUD/mcl_inventory/creative.lua:533
++msgid "@1 / @2"
++msgstr "@1 / @2"
++
++#: mods/HUD/mcl_inventory/init.lua:192
++msgid "Return to player inventory"
++msgstr "返回玩家背包"
++
++#: mods/HUD/mcl_inventory/init.lua:239
++msgid "Crafting table out of range!"
++msgstr "离工作台太远！"
++
++#: mods/HUD/mcl_inventory/survival.lua:123
++msgid "Crafting"
++msgstr "合成"
++
++#: mods/HUD/mcl_inventory/survival.lua:135
++msgid "Fill Craft Grid"
++msgstr "填充合成网格"
+--- a/mods/HUD/mcl_inventory/survival.lua
++++ b/mods/HUD/mcl_inventory/survival.lua
+@@ -131,24 +131,9 @@
+ 		mcl_formspec.get_itemslot_bg_v4(10.375, 1, 1, 1),
+ 		"list[current_player;craftpreview;10.375,1;1,1;]",
+ 
+-		"image_button[9.125,2.125;1,1;mcl_crafting_table_inv_fill.png;__mcl_crafting_fillgrid;]",
+-		"tooltip[__mcl_crafting_fillgrid;" .. F(S("Fill Craft Grid")) .. "]",
+-
+ 		--Crafting guide button
+ 		"image_button[6.575,4.075;1.1,1.1;craftguide_book.png;__mcl_craftguide;]",
+ 		"tooltip[__mcl_craftguide;" .. F(S("Recipe book")) .. "]",
+-
+-		--Help button
+-		"image_button[7.825,4.075;1.1,1.1;doc_button_icon_lores.png;__mcl_doc;]",
+-		"tooltip[__mcl_doc;" .. F(S("Help")) .. "]",
+-
+-		--Skins button
+-		"image_button[9.075,4.075;1.1,1.1;mcl_player_settings.png;__mcl_player_settings;]",
+-		"tooltip[__mcl_player_settings;" .. F(S("Player settings")) .. "]",
+-
+-		--Achievements button
+-		"image_button[10.325,4.075;1.1,1.1;mcl_achievements_button.png;__mcl_achievements;]",
+-		"tooltip[__mcl_achievements;" .. F(S("Advancements")) .. "]",
+ 
+ 		--Listring
+ 		"listring[current_player;main]",
+--- a/mods/ITEMS/mcl_crafting_table/init.lua
++++ b/mods/ITEMS/mcl_crafting_table/init.lua
+@@ -1,109 +1,107 @@
+-local S = core.get_translator(core.get_current_modname())
+-local F = core.formspec_escape
+-local C = core.colorize
+-mcl_crafting_table = {}
+-
+-mcl_crafting_table.formspec = table.concat({
+-	"formspec_version[4]",
+-	"size[11.75,10.425]",
+-
+-	"label[2.25,0.375;" .. F(C(mcl_formspec.label_color, S("Crafting"))) .. "]",
+-
+-	mcl_formspec.get_itemslot_bg_v4(2.25, 0.75, 3, 3),
+-	"list[current_player;craft;2.25,0.75;3,3;]",
+-
+-	"image[6.125,2;1.5,1;gui_crafting_arrow.png]",
+-
+-	mcl_formspec.get_itemslot_bg_v4(8.2, 2, 1, 1, 0.2),
+-	"list[current_player;craftpreview;8.2,2;1,1;]",
+-
+-	"label[0.375,4.7;" .. F(C(mcl_formspec.label_color, S("Inventory"))) .. "]",
+-
+-	mcl_formspec.get_itemslot_bg_v4(0.375, 5.1, 9, 3),
+-	"list[current_player;main;0.375,5.1;9,3;9]",
+-
+-	mcl_formspec.get_itemslot_bg_v4(0.375, 9.05, 9, 1),
+-	"list[current_player;main;0.375,9.05;9,1;]",
+-
+-	"listring[current_player;craft]",
+-	"listring[current_player;main]",
+-
+-	--Crafting guide button
+-	"image_button[0.325,1.95;1.1,1.1;craftguide_book.png;__mcl_craftguide;]",
+-	"tooltip[__mcl_craftguide;" .. F(S("Recipe book")) .. "]",
+-
+-	"image_button[6.025,3.175;1,1;mcl_crafting_table_inv_fill.png;__mcl_crafting_fillgrid;]",
+-	"tooltip[__mcl_crafting_fillgrid;" .. F(S("Fill Craft Grid")) .. "]",
+-})
+-
+-function mcl_crafting_table.has_crafting_table(player)
+-	if not player or not player:get_pos() then return end
+-	local wdef = player:get_wielded_item():get_definition()
+-	local range = wdef and wdef.range or ItemStack():get_definition().range or tonumber(core.settings:get("mcl_hand_range")) or 4.5
+-	return core.is_creative_enabled(player:get_player_name()) or (core.find_node_near(player:get_pos(), range, { "group:crafting_table" }, true) ~= nil)
+-end
+-
+--- track players that are viewing the crafting table formspec
+-local formspec_shown = {}
+-
+-function mcl_crafting_table.show_crafting_form(player)
+-	if not mcl_crafting_table.has_crafting_table(player) then
+-		return
+-	end
+-	formspec_shown[player] = true
+-	core.show_formspec(player:get_player_name(), "main", mcl_crafting_table.formspec)
+-end
+-
+-core.register_on_player_receive_fields(function(player, formname, fields)
+-	if fields.quit and formname == "main" then
+-		formspec_shown[player] = nil
+-	end
+-end)
+-
+-mcl_player.register_globalstep_slow(function(player)
+-	if formspec_shown[player] and not mcl_crafting_table.has_crafting_table(player) then
+-		-- Player managed to get out of range of a crafting table
+-		-- with the crafting formspec still open.
+-		--
+-		-- This can happen when using a hacked client, but also
+-		-- legitimately when the player is moved by the environment,
+-		-- e.g. sinking in water.
+-		--
+-		-- Trigger the actions that would normally be caused by closing
+-		-- the formspec.
+-		core.close_formspec(player:get_player_name(), "main")
+-		core.run_callbacks(core.registered_on_player_receive_fields, 5, player, "main", { quit = true })
+-	end
+-end)
+-
+-core.register_node("mcl_crafting_table:crafting_table", {
+-	description = S("Crafting Table"),
+-	_tt_help = S("3×3 crafting grid"),
+-	_doc_items_longdesc = S("A crafting table is a block which grants you access to a 3×3 crafting grid which allows you to perform advanced crafts."),
+-	_doc_items_usagehelp = S("Rightclick the crafting table to access the 3×3 crafting grid."),
+-	_doc_items_hidden = false,
+-	is_ground_content = false,
+-	tiles = { "crafting_workbench_top.png", "default_wood.png", "crafting_workbench_side.png",
+-		"crafting_workbench_side.png", "crafting_workbench_front.png", "crafting_workbench_front.png" },
+-	paramtype2 = "facedir",
+-	groups = { handy = 1, axey = 1, deco_block = 1, material_wood = 1, flammable = -1, crafting_table = 9 },
+-	on_rightclick = function(_, _, player)
+-		if not player:get_player_control().sneak then
+-			mcl_crafting_table.show_crafting_form(player)
+-		end
+-	end,
+-	sounds = mcl_sounds.node_sound_wood_defaults(),
+-	_mcl_hardness = 2.5,
+-	_mcl_burntime = 15
+-})
+-
+-core.register_craft({
+-	output = "mcl_crafting_table:crafting_table",
+-	recipe = {
+-		{ "group:wood", "group:wood" },
+-		{ "group:wood", "group:wood" }
+-	},
+-})
+-
+-core.register_alias("crafting:workbench", "mcl_crafting_table:crafting_table")
+-core.register_alias("mcl_inventory:workbench", "mcl_crafting_table:crafting_table")
++local S = core.get_translator(core.get_current_modname())
++local F = core.formspec_escape
++local C = core.colorize
++mcl_crafting_table = {}
++
++mcl_crafting_table.formspec = table.concat({
++	"formspec_version[4]",
++	"size[11.75,10.425]",
++
++	"label[2.25,0.375;" .. F(C(mcl_formspec.label_color, S("Crafting"))) .. "]",
++
++	mcl_formspec.get_itemslot_bg_v4(2.25, 0.75, 3, 3),
++	"list[current_player;craft;2.25,0.75;3,3;]",
++
++	"image[6.125,2;1.5,1;gui_crafting_arrow.png]",
++
++	mcl_formspec.get_itemslot_bg_v4(8.2, 2, 1, 1, 0.2),
++	"list[current_player;craftpreview;8.2,2;1,1;]",
++
++	"label[0.375,4.7;" .. F(C(mcl_formspec.label_color, S("Inventory"))) .. "]",
++
++	mcl_formspec.get_itemslot_bg_v4(0.375, 5.1, 9, 3),
++	"list[current_player;main;0.375,5.1;9,3;9]",
++
++	mcl_formspec.get_itemslot_bg_v4(0.375, 9.05, 9, 1),
++	"list[current_player;main;0.375,9.05;9,1;]",
++
++	"listring[current_player;craft]",
++	"listring[current_player;main]",
++
++	--Crafting guide button
++	"image_button[0.325,1.95;1.1,1.1;craftguide_book.png;__mcl_craftguide;]",
++	"tooltip[__mcl_craftguide;" .. F(S("Recipe book")) .. "]",
++
++})
++
++function mcl_crafting_table.has_crafting_table(player)
++	if not player or not player:get_pos() then return end
++	local wdef = player:get_wielded_item():get_definition()
++	local range = wdef and wdef.range or ItemStack():get_definition().range or tonumber(core.settings:get("mcl_hand_range")) or 4.5
++	return core.is_creative_enabled(player:get_player_name()) or (core.find_node_near(player:get_pos(), range, { "group:crafting_table" }, true) ~= nil)
++end
++
++-- track players that are viewing the crafting table formspec
++local formspec_shown = {}
++
++function mcl_crafting_table.show_crafting_form(player)
++	if not mcl_crafting_table.has_crafting_table(player) then
++		return
++	end
++	formspec_shown[player] = true
++	core.show_formspec(player:get_player_name(), "main", mcl_crafting_table.formspec)
++end
++
++core.register_on_player_receive_fields(function(player, formname, fields)
++	if fields.quit and formname == "main" then
++		formspec_shown[player] = nil
++	end
++end)
++
++mcl_player.register_globalstep_slow(function(player)
++	if formspec_shown[player] and not mcl_crafting_table.has_crafting_table(player) then
++		-- Player managed to get out of range of a crafting table
++		-- with the crafting formspec still open.
++		--
++		-- This can happen when using a hacked client, but also
++		-- legitimately when the player is moved by the environment,
++		-- e.g. sinking in water.
++		--
++		-- Trigger the actions that would normally be caused by closing
++		-- the formspec.
++		core.close_formspec(player:get_player_name(), "main")
++		core.run_callbacks(core.registered_on_player_receive_fields, 5, player, "main", { quit = true })
++	end
++end)
++
++core.register_node("mcl_crafting_table:crafting_table", {
++	description = S("Crafting Table"),
++	_tt_help = S("3×3 crafting grid"),
++	_doc_items_longdesc = S("A crafting table is a block which grants you access to a 3×3 crafting grid which allows you to perform advanced crafts."),
++	_doc_items_usagehelp = S("Rightclick the crafting table to access the 3×3 crafting grid."),
++	_doc_items_hidden = false,
++	is_ground_content = false,
++	tiles = { "crafting_workbench_top.png", "default_wood.png", "crafting_workbench_side.png",
++		"crafting_workbench_side.png", "crafting_workbench_front.png", "crafting_workbench_front.png" },
++	paramtype2 = "facedir",
++	groups = { handy = 1, axey = 1, deco_block = 1, material_wood = 1, flammable = -1, crafting_table = 9 },
++	on_rightclick = function(_, _, player)
++		if not player:get_player_control().sneak then
++			mcl_crafting_table.show_crafting_form(player)
++		end
++	end,
++	sounds = mcl_sounds.node_sound_wood_defaults(),
++	_mcl_hardness = 2.5,
++	_mcl_burntime = 15
++})
++
++core.register_craft({
++	output = "mcl_crafting_table:crafting_table",
++	recipe = {
++		{ "group:wood", "group:wood" },
++		{ "group:wood", "group:wood" }
++	},
++})
++
++core.register_alias("crafting:workbench", "mcl_crafting_table:crafting_table")
++core.register_alias("mcl_inventory:workbench", "mcl_crafting_table:crafting_table")
+--- a/mods/ITEMS/mcl_crafting_table/locale/mcl_crafting_table.zh_CN.po
++++ b/mods/ITEMS/mcl_crafting_table/locale/mcl_crafting_table.zh_CN.po
+@@ -1,48 +1,48 @@
+-msgid ""
+-msgstr ""
+-"Project-Id-Version: Luanti textdomain mcl_crafting_table x.x.x\n"
+-"Report-Msgid-Bugs-To: no@example.com\n"
+-"POT-Creation-Date: 2026-04-01 20:58+0200\n"
+-"PO-Revision-Date: \n"
+-"Last-Translator: \n"
+-"Language-Team: \n"
+-"Language: zh_CN\n"
+-"MIME-Version: 1.0\n"
+-"Content-Type: text/plain; charset=UTF-8\n"
+-"Content-Transfer-Encoding: 8bit\n"
+-"X-Generator: mtt_convert 0.1.1\n"
+-
+-#: mods/ITEMS/mcl_crafting_table/init.lua:10
+-msgid "Crafting"
+-msgstr "制作"
+-
+-#: mods/ITEMS/mcl_crafting_table/init.lua:20
+-msgid "Inventory"
+-msgstr "库存"
+-
+-#: mods/ITEMS/mcl_crafting_table/init.lua:33
+-msgid "Recipe book"
+-msgstr "配方书"
+-
+-#: mods/ITEMS/mcl_crafting_table/init.lua:36
+-msgid "Fill Craft Grid"
+-msgstr "填充合成网格"
+-
+-#: mods/ITEMS/mcl_crafting_table/init.lua:80
+-msgid "Crafting Table"
+-msgstr "合成台"
+-
+-#: mods/ITEMS/mcl_crafting_table/init.lua:81
+-msgid "3×3 crafting grid"
+-msgstr "3×3格合成台"
+-
+-#: mods/ITEMS/mcl_crafting_table/init.lua:82
+-msgid ""
+-"A crafting table is a block which grants you access to a 3×3 crafting grid "
+-"which allows you to perform advanced crafts."
+-msgstr ""
+-"工作台是一种方块，能让你使用一个3×3的合成方格，便于你进行更高级的合成操作。"
+-
+-#: mods/ITEMS/mcl_crafting_table/init.lua:83
+-msgid "Rightclick the crafting table to access the 3×3 crafting grid."
+-msgstr "右键点击工作台以打开3×3的合成方格。"
++msgid ""
++msgstr ""
++"Project-Id-Version: Luanti textdomain mcl_crafting_table x.x.x\n"
++"Report-Msgid-Bugs-To: no@example.com\n"
++"POT-Creation-Date: 2026-04-01 20:58+0200\n"
++"PO-Revision-Date: \n"
++"Last-Translator: \n"
++"Language-Team: \n"
++"Language: zh_CN\n"
++"MIME-Version: 1.0\n"
++"Content-Type: text/plain; charset=UTF-8\n"
++"Content-Transfer-Encoding: 8bit\n"
++"X-Generator: mtt_convert 0.1.1\n"
++
++#: mods/ITEMS/mcl_crafting_table/init.lua:10
++msgid "Crafting"
++msgstr "合成"
++
++#: mods/ITEMS/mcl_crafting_table/init.lua:20
++msgid "Inventory"
++msgstr "物品栏"
++
++#: mods/ITEMS/mcl_crafting_table/init.lua:33
++msgid "Recipe book"
++msgstr "配方书"
++
++#: mods/ITEMS/mcl_crafting_table/init.lua:36
++msgid "Fill Craft Grid"
++msgstr "填充合成网格"
++
++#: mods/ITEMS/mcl_crafting_table/init.lua:80
++msgid "Crafting Table"
++msgstr "合成台"
++
++#: mods/ITEMS/mcl_crafting_table/init.lua:81
++msgid "3×3 crafting grid"
++msgstr "3×3格合成台"
++
++#: mods/ITEMS/mcl_crafting_table/init.lua:82
++msgid ""
++"A crafting table is a block which grants you access to a 3×3 crafting grid "
++"which allows you to perform advanced crafts."
++msgstr ""
++"工作台是一种方块，能让你使用一个3×3的合成方格，便于你进行更高级的合成操作。"
++
++#: mods/ITEMS/mcl_crafting_table/init.lua:83
++msgid "Rightclick the crafting table to access the 3×3 crafting grid."
++msgstr "右键点击工作台以打开3×3的合成方格。"
+--- a/mods/ITEMS/mcl_furnaces/locale/mcl_furnaces.zh_CN.po
++++ b/mods/ITEMS/mcl_furnaces/locale/mcl_furnaces.zh_CN.po
+@@ -1,64 +1,64 @@
+-msgid ""
+-msgstr ""
+-"Project-Id-Version: Luanti textdomain mcl_furnaces x.x.x\n"
+-"Report-Msgid-Bugs-To: no@example.com\n"
+-"POT-Creation-Date: 2026-04-01 20:58+0200\n"
+-"PO-Revision-Date: \n"
+-"Last-Translator: \n"
+-"Language-Team: \n"
+-"Language: zh_CN\n"
+-"MIME-Version: 1.0\n"
+-"Content-Type: text/plain; charset=UTF-8\n"
+-"Content-Transfer-Encoding: 8bit\n"
+-"X-Generator: mtt_convert 0.1.1\n"
+-
+-#: mods/ITEMS/mcl_furnaces/init.lua:32 mods/ITEMS/mcl_furnaces/init.lua:71
+-msgid "Inventory"
+-msgstr "库存"
+-
+-#: mods/ITEMS/mcl_furnaces/init.lua:40 mods/ITEMS/mcl_furnaces/init.lua:79
+-msgid "Recipe book"
+-msgstr "配方书"
+-
+-#: mods/ITEMS/mcl_furnaces/init.lua:424 mods/ITEMS/mcl_furnaces/init.lua:585
+-#: mods/ITEMS/mcl_furnaces/init.lua:615 mods/ITEMS/mcl_furnaces/init.lua:664
+-msgid "Furnace"
+-msgstr "熔炉"
+-
+-#: mods/ITEMS/mcl_furnaces/init.lua:616
+-msgid "Uses fuel to smelt or cook items"
+-msgstr "使用燃料来烧炼或烹制物品"
+-
+-#: mods/ITEMS/mcl_furnaces/init.lua:617
+-msgid ""
+-"Furnaces cook or smelt several items, using a furnace fuel, into something "
+-"else."
+-msgstr "熔炉使用燃料将若干物品烧炼或烹制成其他物品。"
+-
+-#: mods/ITEMS/mcl_furnaces/init.lua:619
+-msgid "Use the furnace to open the furnace menu."
+-msgstr "使用熔炉来打开熔炉菜单。"
+-
+-#: mods/ITEMS/mcl_furnaces/init.lua:620
+-msgid ""
+-"Place a furnace fuel in the lower slot and the source material in the upper "
+-"slot."
+-msgstr "将熔炉燃料放在下方的格子里，把原料放在上方的格子里。"
+-
+-#: mods/ITEMS/mcl_furnaces/init.lua:621
+-msgid "The furnace will slowly use its fuel to smelt the item."
+-msgstr "熔炉会慢慢消耗燃料来烧炼物品。"
+-
+-#: mods/ITEMS/mcl_furnaces/init.lua:622
+-msgid "The result will be placed into the output slot at the right side."
+-msgstr "熔炼结果会被放置到右侧的输出格子里。"
+-
+-#: mods/ITEMS/mcl_furnaces/init.lua:623
+-msgid ""
+-"Use the recipe book to see what you can smelt, what you can use as fuel and "
+-"how long it will burn."
+-msgstr "使用合成配方书查看可以烧炼什么、可用作燃料的物品以及燃料能燃烧多久。"
+-
+-#: mods/ITEMS/mcl_furnaces/init.lua:631
+-msgid "Burning Furnace"
+-msgstr "正在燃烧的熔炉"
++msgid ""
++msgstr ""
++"Project-Id-Version: Luanti textdomain mcl_furnaces x.x.x\n"
++"Report-Msgid-Bugs-To: no@example.com\n"
++"POT-Creation-Date: 2026-04-01 20:58+0200\n"
++"PO-Revision-Date: \n"
++"Last-Translator: \n"
++"Language-Team: \n"
++"Language: zh_CN\n"
++"MIME-Version: 1.0\n"
++"Content-Type: text/plain; charset=UTF-8\n"
++"Content-Transfer-Encoding: 8bit\n"
++"X-Generator: mtt_convert 0.1.1\n"
++
++#: mods/ITEMS/mcl_furnaces/init.lua:32 mods/ITEMS/mcl_furnaces/init.lua:71
++msgid "Inventory"
++msgstr "物品栏"
++
++#: mods/ITEMS/mcl_furnaces/init.lua:40 mods/ITEMS/mcl_furnaces/init.lua:79
++msgid "Recipe book"
++msgstr "配方书"
++
++#: mods/ITEMS/mcl_furnaces/init.lua:424 mods/ITEMS/mcl_furnaces/init.lua:585
++#: mods/ITEMS/mcl_furnaces/init.lua:615 mods/ITEMS/mcl_furnaces/init.lua:664
++msgid "Furnace"
++msgstr "熔炉"
++
++#: mods/ITEMS/mcl_furnaces/init.lua:616
++msgid "Uses fuel to smelt or cook items"
++msgstr "使用燃料来烧炼或烹制物品"
++
++#: mods/ITEMS/mcl_furnaces/init.lua:617
++msgid ""
++"Furnaces cook or smelt several items, using a furnace fuel, into something "
++"else."
++msgstr "熔炉使用燃料将若干物品烧炼或烹制成其他物品。"
++
++#: mods/ITEMS/mcl_furnaces/init.lua:619
++msgid "Use the furnace to open the furnace menu."
++msgstr "使用熔炉来打开熔炉菜单。"
++
++#: mods/ITEMS/mcl_furnaces/init.lua:620
++msgid ""
++"Place a furnace fuel in the lower slot and the source material in the upper "
++"slot."
++msgstr "将熔炉燃料放在下方的格子里，把原料放在上方的格子里。"
++
++#: mods/ITEMS/mcl_furnaces/init.lua:621
++msgid "The furnace will slowly use its fuel to smelt the item."
++msgstr "熔炉会慢慢消耗燃料来烧炼物品。"
++
++#: mods/ITEMS/mcl_furnaces/init.lua:622
++msgid "The result will be placed into the output slot at the right side."
++msgstr "熔炼结果会被放置到右侧的输出格子里。"
++
++#: mods/ITEMS/mcl_furnaces/init.lua:623
++msgid ""
++"Use the recipe book to see what you can smelt, what you can use as fuel and "
++"how long it will burn."
++msgstr "使用合成配方书查看可以烧炼什么、可用作燃料的物品以及燃料能燃烧多久。"
++
++#: mods/ITEMS/mcl_furnaces/init.lua:631
++msgid "Burning Furnace"
++msgstr "正在燃烧的熔炉"
+--- a/mods/ITEMS/REDSTONE/mcl_redstone/logic.lua
++++ b/mods/ITEMS/REDSTONE/mcl_redstone/logic.lua
+@@ -43,6 +43,26 @@
+ 	[0x4] = {wire = vector.new(0, -1, 1), obstruct = vector.new(0, 0, 1)},
+ 	[0x8] = {wire = vector.new(1, -1, 0), obstruct = vector.new(1, 0, 0)},
+ }
++
++local function pos_add(pos, delta)
++	if not delta then
++		return vector.new(pos.x, pos.y, pos.z)
++	end
++	if type(delta) == "number" then
++		return vector.new(pos.x + delta, pos.y + delta, pos.z + delta)
++	end
++	return vector.new(pos.x + delta.x, pos.y + delta.y, pos.z + delta.z)
++end
++
++local function pos_sub(pos, delta)
++	if not delta then
++		return vector.new(pos.x, pos.y, pos.z)
++	end
++	if type(delta) == "number" then
++		return vector.new(pos.x - delta, pos.y - delta, pos.z - delta)
++	end
++	return vector.new(pos.x - delta.x, pos.y - delta.y, pos.z - delta.z)
++end
+ 
+ local function iterate_wire_neighbours(wireflags)
+ 	local i = 1
+@@ -90,7 +110,7 @@
+ 	local weak_from_wire_only = 0
+ 
+ 	for i, dir in pairs(sixdirs) do
+-		local pos2 = pos:add(dir)
++		local pos2 = pos_add(pos, dir)
+ 		local node2 = core.get_node(pos2)
+ 
+ 		if get_power_tab[node2.name] then
+@@ -114,7 +134,7 @@
+ local function get_node_power_2(pos)
+ 	local max = get_node_power(pos)
+ 	for _, dir in pairs(sixdirs) do
+-		local pos2 = pos:add(dir)
++		local pos2 = pos_add(pos, dir)
+ 		local node2 = core.get_node(pos2)
+ 
+ 		if opaque_tab[node2.name] then
+@@ -187,11 +207,11 @@
+ 
+ 		updates_[core.hash_node_position(pos)] = pos
+ 
+-		for dir in iterate_wire_neighbours(wireflag_tab[node.name] or 0xFF) do
+-			if not dir.obstruct or not opaque_tab[get_node(pos:add(dir.obstruct)).name] then
+-				local pos2 = pos:add(dir.wire)
+-				local node2 = get_node(pos2)
+-				local power2, power2_direct = get_power(node2)
++	for dir in iterate_wire_neighbours(wireflag_tab[node.name] or 0xFF) do
++		if not dir.obstruct or not opaque_tab[get_node(pos_add(pos, dir.obstruct)).name] then
++			local pos2 = pos_add(pos, dir.wire)
++			local node2 = get_node(pos2)
++			local power2, power2_direct = get_power(node2)
+ 
+ 				if power2 > 0 then
+ 					if power2 < power then
+@@ -222,14 +242,14 @@
+ 		local power = entry.power
+ 		local power2 = power - 1
+ 
+-		local nname = core.get_node(pos:subtract(vector.new(0, 1, 0))).name
++		local nname = core.get_node(pos_sub(pos, vector.new(0, 1, 0))).name
+ 		local on_slab = mcl_redstone._slab_tab[nname] ~= nil
+ 
+ 		updates_[core.hash_node_position(pos)] = pos
+ 
+ 		for dir in iterate_wire_neighbours(wireflag_tab[core.get_node(pos).name]) do
+-			if not (on_slab and dir.wire.y < 0) and (not dir.obstruct or not opaque_tab[get_node(pos:add(dir.obstruct)).name]) then
+-				local pos2 = pos:add(dir.wire)
++			if not (on_slab and dir.wire.y < 0) and (not dir.obstruct or not opaque_tab[get_node(pos_add(pos, dir.obstruct)).name]) then
++				local pos2 = pos_add(pos, dir.wire)
+ 				local node2 = get_node(pos2)
+ 				if wireflag_tab[node2.name] and get_power(node2) < power2 then
+ 					set_power(pos2, power2)
+@@ -250,25 +270,25 @@
+ 		end
+ 	end
+ 
+-	for _, pos in pairs(updates_) do
+-		for _, dir in pairs(sixdirs) do
+-			local pos2 = pos:add(dir)
+-			local node2 = get_node(pos2)
+-			set_pending_update(pos2, node2.name)
+-
+-			if opaque_tab[node2.name] then
+-				for _, dir in pairs(sixdirs) do
+-					local pos3 = pos2:add(dir)
+-					local node3 = get_node(pos3)
+-					set_pending_update(pos3, node3.name)
+-				end
++		for _, pos in pairs(updates_) do
++			for _, dir in pairs(sixdirs) do
++				local pos2 = pos_add(pos, dir)
++				local node2 = get_node(pos2)
++				set_pending_update(pos2, node2.name)
++
++				if opaque_tab[node2.name] then
++					for _, dir in pairs(sixdirs) do
++						local pos3 = pos_add(pos2, dir)
++						local node3 = get_node(pos3)
++						set_pending_update(pos3, node3.name)
++					end
+ 			end
+ 		end
+ 	end
+ end
+ 
+ function mcl_redstone.get_power(pos, dir, option)
+-	core.load_area(pos:subtract(2), pos:add(2))
++	core.load_area(pos_sub(pos, 2), pos_add(pos, 2))
+ 
+ 	-- Create table with keys corresponding to bits in wireflags to
+ 	-- simplify wire direction checks.
+@@ -281,7 +301,7 @@
+ 
+ 	local power = 0
+ 	for i, dir in pairs(dirs) do
+-		local pos2 = pos:add(dir)
++		local pos2 = pos_add(pos, dir)
+ 		local node2 = core.get_node(pos2)
+ 
+ 		if get_power_tab[node2.name] then
+@@ -341,7 +361,7 @@
+ -- Update/notify neighbouring observing nodes at pos, aka "shape update".
+ function mcl_redstone._notify_observer_neighbours(pos)
+ 	for _, dir in pairs(sixdirs) do
+-		local pos2  = pos:add(dir)
++		local pos2  = pos_add(pos, dir)
+ 		local node2 = core.get_node(pos2)
+ 		notify_observer(pos2, node2, pos)
+ 	end
+@@ -350,13 +370,13 @@
+ -- Update components affected by a wire shape change at pos.
+ function mcl_redstone._update_wire_shape_neighbours(pos)
+ 	for _, dir in pairs(sixdirs) do
+-		local pos2 = pos:add(dir)
++		local pos2 = pos_add(pos, dir)
+ 		local node2 = core.get_node(pos2)
+ 		set_pending_update(pos2, node2.name)
+ 
+ 		if opaque_tab[node2.name] then
+ 			for _, dir2 in pairs(sixdirs) do
+-				local pos3 = pos2:add(dir2)
++				local pos3 = pos_add(pos2, dir2)
+ 				local node3 = core.get_node(pos3)
+ 				set_pending_update(pos3, node3.name)
+ 			end
+@@ -369,7 +389,7 @@
+ -- Update neighbouring wires and components at pos. Oldnode is the previous
+ -- node at the position.
+ local function update_neighbours(pos, oldnode, newnode)
+-	core.load_area(pos:subtract(20), pos:add(20))
++	core.load_area(pos_sub(pos, 20), pos_add(pos, 20))
+ 
+ 	local fill_nodes = {}
+ 	local clear_nodes = {}
+@@ -393,7 +413,7 @@
+ 	if not (get_power or old_get_power) then return end
+ 
+ 	for _, dir in pairs(sixdirs) do
+-		local pos2 = pos:add(dir)
++		local pos2 = pos_add(pos, dir)
+ 		local power2 = get_power and get_power(node, dir) or 0
+ 		local oldpower2 = old_get_power and old_get_power(oldnode, dir) or 0
+ 
+@@ -405,7 +425,7 @@
+ 				update_wire(pos2, oldpower2)
+ 			elseif opaque_tab[node2.name] then
+ 				for i, dir in pairs(sixdirs) do
+-					local pos3 = pos2:add(dir)
++					local pos3 = pos_add(pos2, dir)
+ 					local node3 = core.get_node(pos3)
+ 					set_pending_update(pos3, node3.name)
+ 
+@@ -462,7 +482,7 @@
+ 	end
+ 
+ 	for _, dir in pairs(sixdirs) do
+-		local pos2 = pos:add(dir)
++		local pos2 = pos_add(pos, dir)
+ 		local node2 = core.get_node(pos2)
+ 		if wireflag_tab[node2.name] then
+ 			update_wire(pos2)

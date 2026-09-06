@@ -1,0 +1,71 @@
+name: Validate and publish offline preview
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: block-world-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  validate:
+    runs-on: windows-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.11'
+      - run: python scripts/check.py
+      - name: Windows PowerShell syntax
+        shell: powershell
+        run: ./scripts/check-powershell.ps1
+      - name: Fetch pinned runtime and corresponding sources
+        shell: powershell
+        run: ./scripts/fetch-deps.ps1
+      - name: Offline deployment smoke test
+        shell: powershell
+        run: ./scripts/launch.ps1 -Check
+      - name: Build and audit offline archive
+        run: python scripts/build-release.py --version v0.1.0
+  publish:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: validate
+    runs-on: windows-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.11'
+      - name: Check existing immutable version
+        id: existing
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view v0.1.0 --repo $env:GITHUB_REPOSITORY *> $null
+          $exists = $LASTEXITCODE -eq 0
+          "exists=$($exists.ToString().ToLower())" >> $env:GITHUB_OUTPUT
+          exit 0
+      - if: steps.existing.outputs.exists != 'true'
+        shell: powershell
+        run: ./scripts/fetch-deps.ps1
+      - if: steps.existing.outputs.exists != 'true'
+        run: python scripts/build-release.py --version v0.1.0
+      - name: Publish preview and checksums
+        if: steps.existing.outputs.exists != 'true'
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create v0.1.0 dist/block-world-cn-v0.1.0-windows-x64-offline.zip dist/SHA256SUMS.txt --repo $env:GITHUB_REPOSITORY --target $env:GITHUB_SHA --prerelease --title "方块世界 v0.1.0 · 中文离线预发布" --notes-file docs/RELEASE_NOTES.md
+          if ($LASTEXITCODE -ne 0) { throw 'Release publication failed' }
