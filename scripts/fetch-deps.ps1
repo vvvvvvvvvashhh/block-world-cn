@@ -1,5 +1,6 @@
 ﻿param()
 $ErrorActionPreference = 'Stop'
+$ProgressPreference = 'SilentlyContinue'
 $project = Split-Path $PSScriptRoot -Parent
 $cache = Join-Path $project 'downloads'
 New-Item -ItemType Directory -Force -Path $cache | Out-Null

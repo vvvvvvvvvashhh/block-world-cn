@@ -67,5 +67,8 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          $head = gh api "repos/$env:GITHUB_REPOSITORY/git/ref/heads/main" --jq .object.sha
+          if ($LASTEXITCODE -ne 0) { throw 'Cannot verify release target' }
+          if ($head.Trim() -ne $env:GITHUB_SHA) { throw 'main advanced; publish from the newest workflow run.' }
           gh release create v0.1.0 dist/block-world-cn-v0.1.0-windows-x64-offline.zip dist/SHA256SUMS.txt --repo $env:GITHUB_REPOSITORY --target $env:GITHUB_SHA --prerelease --title "方块世界 v0.1.0 · 中文离线预发布" --notes-file docs/RELEASE_NOTES.md
           if ($LASTEXITCODE -ne 0) { throw 'Release publication failed' }
